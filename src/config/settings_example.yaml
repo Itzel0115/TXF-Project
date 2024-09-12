@@ -1,0 +1,21 @@
+data:
+  root_dir: "data/raw"
+  timezone: "Asia/Taipei"
+  file_pattern: "TXF_1min_*.csv"  # TODO: 視實際檔名格式調整
+
+backtest:
+  initial_capital: 1000000        # 初始資金
+  commission_per_contract: 50     # 單邊手續費
+  slippage_ticks: 1               # 模擬滑價 ticks
+  contract_multiplier: 200        # 台指期每點乘數（依實際情況調整）
+
+strategies:
+  ma_crossover:
+    fast_window: 10
+    slow_window: 20
+  bollinger_mean_reversion:
+    window: 20
+    num_std: 2.0
+  turtle_breakout:
+    breakout_window: 20
+    exit_window: 10

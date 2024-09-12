@@ -1,0 +1,28 @@
+# ---- Python & venv ----
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# Jupyter / 編輯器暫存
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 專案資料與輸出 ----
+# 原始完整資料（避免 146MB CSV 被推上 GitHub）
+TXF_R1_1min_data_combined.csv
+
+# 回測與研究輸出的 CSV（只保留目錄與 .gitkeep）
+outputs/*.csv
+
+# ---- 其他雜項 ----
+*.log
